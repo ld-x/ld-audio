@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "draft-js": "^0.9.1",
+    "immutable": "~3.7.4",
     "styled-components": "^1.2.1"
   },
   "keywords": [

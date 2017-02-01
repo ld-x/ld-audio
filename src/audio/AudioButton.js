@@ -6,7 +6,7 @@
  */
 
 import React, {Component} from 'react'
-import insertDataBlock from '../../utils/insertDataBlock'
+import insertDataBlock from './insertDataBlock'
 
 export default class extends Component {
   getSoundCloudInfo (url) {
