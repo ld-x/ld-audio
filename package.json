@@ -2,7 +2,7 @@
   "name": "ld-audio",
   "version": "1.0.1",
   "description": "Last Draft audio plugin",
-  "main": "lib/color/plugin.js",
+  "main": "lib/audio/plugin.js",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib --copy-files"
   },
