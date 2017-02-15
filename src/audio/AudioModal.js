@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import icons from '../../components/Icons/'
 import styled from 'styled-components'
-import insertDataBlock from '../../utils/insertDataBlock'
+import insertDataBlock from './insertDataBlock'
 
 export default class extends Component {
   constructor (props) {
