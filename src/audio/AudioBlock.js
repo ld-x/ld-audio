@@ -6,7 +6,7 @@
  */
 
 import React, {Component} from 'react'
-import Block from '../block/Block'
+import Block from './Block'
 import CloseIcon from './Close'
 import Player from './Player'
 import styled from 'styled-components'

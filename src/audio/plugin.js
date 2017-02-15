@@ -6,10 +6,12 @@
 
 import AudioButton from './AudioButton'
 import AudioBlock from './AudioBlock'
+import AudioModal from './AudioModal'
 
 export default {
   type: 'audio',
   editable: false,
   button: AudioButton,
-  block: AudioBlock
+  block: AudioBlock,
+  modal: AudioModal
 }
