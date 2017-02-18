@@ -7,6 +7,7 @@
 import React, { Component, PropTypes } from 'react'
 import ReactDOM from 'react-dom'
 import styled, { keyframes } from 'styled-components'
+import 'whatwg-fetch'
 
 class Play extends Component {
   render() {
