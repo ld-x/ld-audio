@@ -1,6 +1,6 @@
 {
   "name": "ld-audio",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Last Draft audio plugin",
   "main": "lib/audio/plugin.js",
   "scripts": {
