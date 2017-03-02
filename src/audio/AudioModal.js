@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
-import insertDataBlock from './insertDataBlock'
 
 export default class extends Component {
   constructor (props) {
@@ -30,11 +29,12 @@ export default class extends Component {
   }
 
   submitUrl (src) {
+    const {onChange, insertDataBlock} = this.props
     let audioSrc = this.getSoundCloudInfo(src)
     if (audioSrc === undefined || audioSrc === null) { return }
 
     const data = {src: src, type: 'audio'}
-    this.props.onChange(insertDataBlock(this.props.editorState, data))
+    onChange(insertDataBlock(this.props.editorState, data))
   }
 
 
