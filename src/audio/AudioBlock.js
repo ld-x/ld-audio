@@ -26,7 +26,7 @@ export default class extends Component {
               </BlockAction>
             </BlockActions>
           </BlockActionsWrapper>
-          <AudioBlockWrapper className='ld-Audio-block-wrapper'>
+          <AudioBlockWrapper className='ld-audio-block-wrapper'>
             <Player
               url={this.props.data.src} />
           </AudioBlockWrapper>

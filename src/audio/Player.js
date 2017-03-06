@@ -138,8 +138,8 @@ export default class extends Component {
 
     if (playing) {
       return (
-        <PlayerControlIconPause className='player__control__icons--pause'>
-          <PlayerControlIcon className='player__control__icon' onClick={::this.togglePlay}>
+        <PlayerControlIconPause className='ld-player-control-icons-pause'>
+          <PlayerControlIcon className='ld-player-control-icon' onClick={::this.togglePlay}>
             <Pause  />
           </PlayerControlIcon>
         </PlayerControlIconPause>
@@ -147,8 +147,8 @@ export default class extends Component {
     }
 
     return (
-      <PlayerControlIconPlay className='player__control__icons--play'>
-        <PlayerControlIcon className='player__control__icon' onClick={::this.togglePlay}>
+      <PlayerControlIconPlay className='ld-player-control-icons-play'>
+        <PlayerControlIcon className='ld-player-control-icon' onClick={::this.togglePlay}>
           <Play />
         </PlayerControlIcon>
       </PlayerControlIconPlay>
@@ -163,7 +163,7 @@ export default class extends Component {
 
     if (loading) {
       return (
-        <Player className='playere'>
+        <Player className='ld-player'>
           <Loader height='36' viewBox='0 0 36 36' width='36' className='ld-player-loader'>
             <path d='M28.4,6.6C25.7,4.3,22.3,3,18.5,3C9.9,3,3,9.9,3,18.5S9.9,34,18.5,34c4.3,0,8.1-1.7,11-4.5l-1.8-1.8 c-2.3,2.3-5.6,3.8-9.1,3.8c-7.1,0-13-5.8-13-13s5.8-13,13-13c3.1,0,5.9,1.1,8.1,2.9l-4.5,4.5h8H33H33V2L28.4,6.6z' fill='currentColor' />
           </Loader>
@@ -179,25 +179,25 @@ export default class extends Component {
       return (
       	<Player className='player'>
           <audio id='audio' preload='none' ref='audio' src={streamUrl} />
-          <PlayerControl className='player__control'>
+          <PlayerControl className='ld-player-control'>
             { this.renderPlayerIcons() }
           </PlayerControl>
 
-          <PlayerDisplay className='player__display' onClick={::this.positionChange}>
+          <PlayerDisplay className='ld-player-display' onClick={::this.positionChange}>
             <div><h4>{title}</h4></div>
-            <PlayerProgress className='player__progress'>
-              <PlayerProgressTime className='player__progress__time'>{current_time}</PlayerProgressTime>
-              <PlayerProgressBar className='player__progress__bar'>
-                <PlayerProgressBarWrapper ref='progress'>
+            <PlayerProgress className='ld-player-progress'>
+              <PlayerProgressTime className='ld-player-progress-time'>{current_time}</PlayerProgressTime>
+              <PlayerProgressBar className='ld-player-progress-bar'>
+                <PlayerProgressBarWrapper ref='progress' className='ld-player-progress-bar-wrapper'>
                   <Progress
-                    className='player__progress__bar--progress'
+                    className='ld-player-progress-bar-progress'
                     style={progress_remains} />
                   <PlayerProgressBarPercent
-                    className='player__progress__bar--percent'
+                    className='ld-player-progress-bar-percent'
                     style={time_remains} />
                 </PlayerProgressBarWrapper>
               </PlayerProgressBar>
-              <PlayerProgressTime className='player__progress__time'>{duration}</PlayerProgressTime>
+              <PlayerProgressTime className='ld-player-progress-time'>{duration}</PlayerProgressTime>
             </PlayerProgress>
           </PlayerDisplay>
         </Player>
