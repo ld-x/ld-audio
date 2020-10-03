@@ -6,7 +6,7 @@ Plays audio in a custom player from soundcloud track urls. Support for last.fm i
 [![npm version](https://badge.fury.io/js/ld-audio.svg)](https://badge.fury.io/js/ld-audio)
 
 # Install
-```jsx
+```bash
 npm install ld-audio --save
 ```
 
